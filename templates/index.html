@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🍱 Food Expiry Tracker</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
   <div class="wrapper">
@@ -12,7 +12,6 @@
       <h1>🍓 Food Expiry Tracker</h1>
       <p>Keep your kitchen smart and safe!</p>
 
-      <!-- Input Form -->
       <div class="form-card">
         <input type="text" id="name" placeholder="🥛 Food name (e.g., Milk)" />
         <input type="text" id="quantity" placeholder="⚖️ Quantity (e.g., 2kg, 1L)" />
@@ -20,7 +19,6 @@
         <button id="addBtn" class="glow">➕ Add Item</button>
       </div>
 
-      <!-- Table Display -->
       <div class="table-card">
         <table id="foodTable">
           <thead>
@@ -39,6 +37,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
