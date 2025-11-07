@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍱 Food Expiry Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1>🍓 Food Expiry Tracker</h1>
+      <p>Keep your kitchen smart and safe!</p>
+
+      <!-- Input Form -->
+      <div class="form-card">
+        <input type="text" id="name" placeholder="🥛 Food name (e.g., Milk)" />
+        <input type="text" id="quantity" placeholder="⚖️ Quantity (e.g., 2kg, 1L)" />
+        <input type="date" id="expiry" />
+        <button id="addBtn" class="glow">➕ Add Item</button>
+      </div>
+
+      <!-- Table Display -->
+      <div class="table-card">
+        <table id="foodTable">
+          <thead>
+            <tr>
+              <th>Food Name</th>
+              <th>Quantity</th>
+              <th>Expiry Date</th>
+              <th>Days Left</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <button id="clearBtn" class="clear glow">🗑️ Clear All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
