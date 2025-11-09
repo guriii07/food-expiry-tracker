@@ -1,6 +1,3 @@
--- schema.sql
--- Relational Schema Design (DBMS Concept)
-
 -- Table for Food Categories to demonstrate Foreign Key relationships (Normalization)
 CREATE TABLE FoodCategory (
     category_id INTEGER PRIMARY KEY,
